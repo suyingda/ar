@@ -1,7 +1,8 @@
 <template>
   <div id="app">
  {{arrarr}}<br/>a
-               <div v-for="ll in arrarr"  >
+               <div v-for="(ll,index,indexd) in arrarr"  >
+               我是index{{indexd}}<br/>
       我是标题分组: {{ll[0].name}}
                 <div v-for="l in ll"  >
                <li v-for="iii in l">{{iii}}</li>
